@@ -1,52 +1,76 @@
-# Advanced SQL Business Analysis
+\# Advanced SQL Analysis
 
-## Objective
 
-Combine sales, product, customer, and operational data to answer
-complex business questions using advanced PostgreSQL techniques.
 
-## Business Questions
+\## Objective
 
-1. Who are the highest-value customers within each region?
-2. Which products lead revenue within each category?
-3. How is revenue trending month over month and year over year?
-4. What are the 3-month rolling revenue trends?
-5. What proportion of revenue comes from top customer quartiles?
-6. Who are the top 10% of customers by spending?
-7. What categories do individual customers prefer?
-8. Which products are gaining or losing demand momentum?
-9. Which high-value customers experience poor delivery performance?
-10. Which sales channels perform best across revenue, profit, and returns?
-11. Do a small number of products generate most company revenue?
-12. Which sales channel leads each month?
 
-## Advanced SQL Techniques Used
 
-- CTEs
-- Multiple CTEs
-- ROW_NUMBER
-- RANK
-- DENSE_RANK
-- LAG
-- LEAD
-- NTILE
-- PERCENTILE_CONT
-- PARTITION BY
-- Window frames
-- Running totals
-- Rolling averages
-- Conditional aggregation
-- FILTER
-- CASE
-- HAVING
-- Subqueries
-- Cross joins
-- Multi-table joins
+Use advanced SQL techniques to answer business questions that require ranking, comparisons across periods, customer segmentation and cumulative calculations.
 
-## Key Findings
 
-To be completed after analysis.
 
-## Recommendations
+\## Techniques Demonstrated
 
-To be completed after analysis.
+
+
+| Technique           | Application                                   |
+
+| ------------------- | --------------------------------------------- |
+
+| CTEs                | Break complex analysis into readable steps    |
+
+| `ROW\_NUMBER()`      | Select the first-ranked record within a group |
+
+| `RANK()`            | Rank records while preserving ties            |
+
+| `DENSE\_RANK()`      | Rank records without gaps after ties          |
+
+| `NTILE()`           | Divide customers into spending groups         |
+
+| `LAG()`             | Compare with previous periods or purchases    |
+
+| `LEAD()`            | Compare with subsequent periods               |
+
+| Rolling averages    | Smooth short-term revenue fluctuations        |
+
+| Cumulative sums     | Track revenue accumulated over time           |
+
+| `PERCENTILE\_CONT()` | Calculate spending percentiles                |
+
+| `HAVING`            | Filter groups after aggregation               |
+
+
+
+\## Business Applications
+
+
+
+\* Compare monthly revenue with previous periods.
+
+\* Identify high-value customers.
+
+\* Rank products within categories.
+
+\* Explore customer purchasing patterns.
+
+\* Analyse product revenue contribution.
+
+\* Identify products with high sales and elevated return activity.
+
+\* Compare product demand across time periods.
+
+
+
+\## Interpretation
+
+
+
+Advanced SQL makes it possible to answer multi-step questions directly in PostgreSQL. Results should be interpreted in the context of the data's time range, aggregation level and business definitions.
+
+
+
+For example, a high-spending customer is not automatically a high-profit customer. Revenue, profit and customer acquisition costs should be considered separately where the data permits.
+
+
+

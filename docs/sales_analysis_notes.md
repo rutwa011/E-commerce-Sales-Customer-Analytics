@@ -1,20 +1,74 @@
-# Sales & Revenue Analysis
+\# Sales Analysis Notes
 
-## Business Questions
 
-1. What is total revenue and profit?
-2. How has revenue changed over time?
-3. Which sales channels drive the most revenue?
-4. Which regions contribute the most revenue?
-5. What is month-over-month growth?
-6. What is year-over-year growth?
-7. What percentage of revenue comes from each channel?
-8. Which months generated the highest profit?
 
-## Key Findings
+\## Objective
 
-To be completed after analysis.
 
-## Recommendations
 
-To be completed after analysis.
+Analyse revenue, profit, order volume and average order value across time, customer segments and sales channels.
+
+
+
+\## Key Metrics
+
+
+
+\* \*\*Revenue:\*\* Sum of `net\_sales`
+
+\* \*\*Profit:\*\* Sum of `profit`
+
+\* \*\*Average order value:\*\* Average `net\_sales` per order
+
+\* \*\*Profit margin:\*\* Total profit divided by total net sales, multiplied by 100
+
+\* \*\*Return rate:\*\* Returned orders divided by total orders, multiplied by 100
+
+
+
+\## Analysis Techniques
+
+
+
+\* Aggregation with `SUM`, `COUNT` and `AVG`
+
+\* Grouping by year, month, channel and customer segment
+
+\* Date calculations with `EXTRACT` and `DATE\_TRUNC`
+
+\* Conditional aggregation using `FILTER`
+
+\* Revenue and profit comparisons
+
+\* Month-over-month and year-over-year calculations using `LAG`
+
+\* Rolling averages and cumulative revenue
+
+\* Ranking and revenue contribution analysis
+
+
+
+\## Key Findings
+
+
+
+\* Total net sales were $177,134,263.74.
+
+\* Total profit was $76,146,395.76.
+
+\* Average order value was $1,282.50.
+
+\* The derived profit margin was 42.99%.
+
+\* Revenue remained relatively stable from 2021 to 2025.
+
+\* The Mobile App was the largest sales channel by revenue.
+
+\* The Consumer segment generated the highest revenue among customer segments.
+
+
+
+Detailed results and interpretations are documented in `business\_insights.md`.
+
+
+
